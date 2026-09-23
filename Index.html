@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎬 Movie Ticket Booking</h1>
+    <p>Online Movie Ticket Booking System</p>
+</header>
+
+<div class="container">
+
+    <h2>Available Movies</h2>
+
+    <div class="movies">
+
+        <div class="movie">
+            <h3>Leo</h3>
+            <p>Show Time: 10:00 AM</p>
+            <p>Ticket Price: ₹200</p>
+        </div>
+
+        <div class="movie">
+            <h3>Vikram</h3>
+            <p>Show Time: 2:00 PM</p>
+            <p>Ticket Price: ₹200</p>
+        </div>
+
+        <div class="movie">
+            <h3>Coolie</h3>
+            <p>Show Time: 6:00 PM</p>
+            <p>Ticket Price: ₹200</p>
+        </div>
+
+        <div class="movie">
+            <h3>Dragon</h3>
+            <p>Show Time: 9:00 PM</p>
+            <p>Ticket Price: ₹200</p>
+        </div>
+
+    </div>
+
+    <div class="booking">
+
+        <h2>🎟️ Book Your Ticket</h2>
+
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <select id="movie">
+            <option value="Leo">Leo - 10:00 AM</option>
+            <option value="Vikram">Vikram - 2:00 PM</option>
+            <option value="Coolie">Coolie - 6:00 PM</option>
+            <option value="Dragon">Dragon - 9:00 PM</option>
+        </select>
+
+        <input type="number" id="tickets" min="1" max="10" value="1">
+
+        <button onclick="bookTicket()">Book Ticket</button>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Movie Ticket Booking System
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
